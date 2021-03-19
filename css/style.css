@@ -215,13 +215,66 @@ li {
 
 /*Contacto*/
 
-form{
-    margin: 30px;
+.seccionContacto {
     display: flex;
     flex-direction: column;
-       
+    align-items: center;
 }
 
+.headerForm {
+    text-align: center;
+    background-color: #000000;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+    padding: 50px;
+    
+}
+
+.headerForm h3 {
+    color: white;
+}
+
+.formContacto {
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 80%;
+    padding: 30px;
+    margin: 0 0 40px 0;
+}
+
+.formRow {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.formRow input [type="text,email"] {
+    background-color: #fff;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    width: 100%;
+    padding:7px;
+    font-size: 14px;  
+}
+
+.formRow label {
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.formRow button {
+    align-self: center;
+    margin-top: 10px;
+    width: 15%;
+    box-shadow: #000000;
+    overflow: hidden;
+    
+}
 /*Footer*/
 
 footer {
@@ -236,9 +289,12 @@ footer {
     padding: 30px;
 }
 
+footer a {
+    text-decoration: none;
+}
 
 .redes {
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 15px;    
 }
 
@@ -280,7 +336,7 @@ h2 {
 .boton label {
     color: #fff;
     background: #2a343e;
-    padding:5px;
+    padding: 1px;
     font-size: 14px;
     border-radius: 3px;
     cursor: pointer;
@@ -310,14 +366,14 @@ h2 {
     
     .logo h1 {
         font-size: 1.5rem;
-        line-height: 30px;
+        line-height: 40px;
     }
 
     .menu {
         position: absolute;
         background: #234;
         width: 100%;
-        height: 45vh;
+        height: 35vh;
         top: 60px;
         left: 0;
         /* transition:all 500ms ease; */
@@ -342,5 +398,20 @@ h2 {
         display: block;
         
     }
+
 }
 
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */

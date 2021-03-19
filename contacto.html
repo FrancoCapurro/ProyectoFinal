@@ -38,7 +38,7 @@
     <!--Tamaño de 70 caracteres-->
     <title>Contacto-Franco Capurro</title>
 </head>
-<body>
+<body class="body">
     <header class="header-container">
         <div class="containerInicio">
             <div class="logo">
@@ -61,26 +61,33 @@
     </header>
 
     <main>          
-    
-        <section class="seccionContacto">
-            <h2>Contacto</h2>
-          
-            <form class="Form">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre"> <!--El ID se ingresa en el label para que -->
-                <label for="apellido">Apellido</label> 
-                <input type="text" id="apellido" name="apellido">
-                <label for="">Direccion correo electronico</label>
-                <input type="email" name="email" id="email" >
-                <label for="Contactenos">Contactenos</label>
-                <textarea name="Contactenos" id="Contactenos" cols="70" rows="5"></textarea>
-                <input type= "submit" value="Enviar">
-                <input type="reset" value="Limpiar formulario">
-             </form>
+        <section class="seccionContacto espacioSup">
+            <!--Header del form-->
+            <header class="headerForm">
+                <h3>Contacto</h3>
+            </header>
+            <!--Fin header form-->
 
+            <!--Formulario contacto-->
+            <form action="" method="" class="formContacto">
+                <div class="formRow">
+                    <label for="full-name">Nombre y apellido</label>
+                    <input type="text" name="nombreYapellido" id="full-name" placeholder="Ingrese su nombre y apellido">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@mail.com"> 
+
+                    <label for="mensaje">Enviame tu consulta</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="6"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            <!--Fin formulario contacto-->  
         </section>
 
-     </main>
+
+    </main>
      
     <footer>
         <span class="contenedorRedes">
