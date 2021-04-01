@@ -166,11 +166,36 @@ li {
 
 
 /*Sobre mi*/
+.containerSobre {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+.textoSobre {
+    background-color: white;
+    height: 450px;
+    width: 20%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
 
-/* .contenedorSobremi {
-    display: flex;   
-} */
+.imgSobre {
+    width: 50%;
+}
+
+.textoSobre h2 {
+    margin-bottom: 1rem;
+}
+.textoSobre h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 .contenedorSobremi img {
     float: left;
@@ -243,10 +268,10 @@ li {
 }
 
 .formContacto {
-    background-color: yellow;
+    background-color: lightgray;
     border: 1px solid black;
     border-radius: 5px;
-    width: 80%;
+    width: 60%;
     padding: 30px;
     margin: 0 0 40px 0;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -260,11 +285,11 @@ li {
     flex-wrap: wrap;   
 }
 
-.formRow input [type="text"] 
-.formRow input [type="email"] {
-    background-color: #fff;
-    border: 1px solid yellow;
-    border-radius: 5px;
+.formRow input[type="text"],
+.formRow input[type="email"] {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
     width: 100%;
     padding:7px;
     font-size: 14px;  
@@ -353,11 +378,34 @@ h2 {
     cursor: pointer;
 }
 
+hr {
+    size: 5px;
+}
 
 
 
 
 /*codigo para dispositivos moviles*/
+@media only screen and (max-width:1144px) {
+    .containerSobre {
+        flex-direction: column;
+        justify-content: center;   
+}
+    .imgSobre {
+        width: 100%;
+        
+    }
+
+    .imgSobre img {
+        width: 100%;
+    }
+    .textoSobre {
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
 
 @media only screen and (min-width:1030px) {
     .menu {
@@ -422,6 +470,7 @@ h2 {
     }
 
 }
+
 
 /* // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { ... }
