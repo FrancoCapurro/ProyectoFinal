@@ -168,14 +168,14 @@ li {
 /*Sobre mi*/
 .containerSobre {
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
 .textoSobre {
     background-color: white;
-    height: 450px;
-    width: 20%;
+    height: auto;
+    width: 18%;
     margin-bottom: 30px;
     margin-top: 30px;
     border-radius: 5px;
@@ -185,23 +185,40 @@ li {
 }
 
 .imgSobre {
-    width: 50%;
+    width: 43%;
 }
 
 .textoSobre h2 {
     margin-bottom: 1rem;
 }
+
 .textoSobre h4 {
-    font-size: 20px;
     font-weight: bold;
+    line-height: 1.5;
+}
+
+.textoSobre p {
+    font-size: 20px;
+}
+
+.contenedorRedes {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+.contenedorRedes a {
+   text-decoration: none;
+   color: #000000;
+   border-bottom: 4px solid transparent;
+}
+
+.contenedorRedes a:hover {
+    border-bottom: 6px solid #000000;
 }
 
 
-.contenedorSobremi img {
-    float: left;
-}
-
-/*Seccion proyectos*/
+ /*Seccion proyectos*/
 .seccionProyectos {
     width: 100%;
     background-color: #000000;
@@ -322,7 +339,7 @@ footer {
     height: 100px;
     width: 100%;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 footer a {
@@ -354,7 +371,7 @@ h2 {
     font-family: 'Permanent Marker', cursive;
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 
@@ -386,7 +403,8 @@ hr {
 
 
 /*codigo para dispositivos moviles*/
-@media only screen and (max-width:1144px) {
+
+@media only screen and (max-width:1433px) {
     .containerSobre {
         flex-direction: column;
         justify-content: center;   
